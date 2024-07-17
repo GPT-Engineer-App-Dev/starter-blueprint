@@ -1,10 +1,22 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from 'react';
+import { Button } from "@/components/ui/button";
 
 const Index = () => {
   return (
-    <div className="text-center">
-      <h1 className="text-3xl">Your Blank Canvas</h1>
-      <p>Chat with the agent to start making edits.</p>
+    <div className="min-h-screen flex flex-col">
+      <header className="bg-gray-800 text-white p-4">
+        <h1 className="text-2xl font-bold">My Application</h1>
+      </header>
+
+      <main className="flex-grow container mx-auto px-4 py-8">
+        <h2 className="text-3xl font-semibold mb-4">Welcome to Your App</h2>
+        <p className="mb-4">This is a starting point. Build something amazing!</p>
+        <Button variant="outline">Get Started</Button>
+      </main>
+
+      <footer className="bg-gray-200 p-4 text-center">
+        <p>&copy; 2023 Your Name / Company</p>
+      </footer>
     </div>
   );
 };
